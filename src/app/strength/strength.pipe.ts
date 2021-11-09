@@ -9,6 +9,8 @@ export class StrengthPipe implements PipeTransform {
       return value + " (weak)";
     } else if(value >= 10 && value < 20) {
       return value + " (strong)";
+    } else if(value = 21) {
+      return value + " (equal)";
     } else {
       return value + " (unbelievable)";
     }
